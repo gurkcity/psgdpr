@@ -2,7 +2,7 @@
 
 ## About
 
-Make your store comply with the General Data Protection Regulation (GDPR).
+Official GDPR compliance module
 
 ## Multistore compatibility
 

@@ -1,24 +1,7 @@
 <?php
-/**
- * Copyright since 2007 PrestaShop SA and Contributors
- * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.md.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- */
+
 global $_MODULE;
-$_MODULE = [];
+$_MODULE = array();
 $_MODULE['<{psgdpr}prestashop>psgdpr_5966265f35dd87febf4d59029bc9ef66'] = 'Offizielles Modul zur DSGVO-Compliance';
 $_MODULE['<{psgdpr}prestashop>psgdpr_dbf90f78fc135d723570a4a43041a3dc'] = 'Mit diesem von PrestaShop entwickelten Modul erfüllen Sie die wichtigsten Anforderungen der Europäischen Datenschutz-Grundverordnung.';
 $_MODULE['<{psgdpr}prestashop>psgdpr_bb8956c67b82c7444a80c6b2433dd8b4'] = 'Sind Sie sicher, dass Sie dieses Modul deinstallieren wollen?';
@@ -61,7 +44,6 @@ $_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_d02bbc3cb147c272b0445ac5ca
 $_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_ea067eb37801c5aab1a1c685eb97d601'] = 'Insgesamt gezahlt';
 $_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_0e166fe6d96b79167a1cdc0dcecb43dd'] = 'Produkt(e) in der Bestellung';
-$_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_63d5049791d9d79d86e9a108b0a999ca'] = 'Referenz';
 $_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_49ee3087348e8d44e1feda1917443987'] = 'Name';
 $_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_694e8d1f2ee056f98ee488bdc4982d73'] = 'Menge';
 $_MODULE['<{psgdpr}prestashop>personaldata.orders-tab_08cfa7751d1812e961560f623e082aba'] = 'Keine Bestellungen';
@@ -92,7 +74,6 @@ $_MODULE['<{psgdpr}prestashop>personaldata.generalinfo-tab_60adc330494a66981dec1
 $_MODULE['<{psgdpr}prestashop>personaldata.generalinfo-tab_6c5a79a30b5c5c4fb6ec45735d32edc2'] = 'Ape';
 $_MODULE['<{psgdpr}prestashop>personaldata.generalinfo-tab_1c76cbfe21c6f44c1d1e59d54f3e4420'] = 'Unternehmen';
 $_MODULE['<{psgdpr}prestashop>personaldata.generalinfo-tab_15bbb9d0bbf25e8d2978de1168c749dc'] = 'Website';
-$_MODULE['<{psgdpr}prestashop>personaldata.generalinfo-tab_019ec3132cdf8ee0f2e2a75cf5d3e459'] = 'Geschlecht';
 $_MODULE['<{psgdpr}prestashop>personaldata.modules-tab_e55f75a29310d7b60f7ac1d390c8ae42'] = 'Modul';
 $_MODULE['<{psgdpr}prestashop>dataconsent_9aa5e987f351139f2b4e3d14b9353e56'] = 'Konfiguration Ihrer Kontrollkästchen';
 $_MODULE['<{psgdpr}prestashop>dataconsent_62442110c88c18b3645145cee9211474'] = 'Bitte individualisieren Sie Ihre Nachrichten für die Einwilligungsanfrage unten in den dafür vorgesehenen Feldern:';
@@ -104,18 +85,8 @@ $_MODULE['<{psgdpr}prestashop>dataconsent_c2f3f489a00553e7a01d369c103c7251'] = '
 $_MODULE['<{psgdpr}prestashop>dataconsent_f782036f044fe2a6de1677dcac0868c2'] = 'Einwilligungsanfrage';
 $_MODULE['<{psgdpr}prestashop>dataconsent_c7ad735a42df6942cbad2402dd3fad2a'] = 'Diese Nachricht wird im Formular zur Kundenerstellung angezeigt';
 $_MODULE['<{psgdpr}prestashop>dataconsent_27fb780f8fef2ffc1767a0a75cc12b65'] = 'Bereich Kundenkonto';
-$_MODULE['<{psgdpr}prestashop>dataconsent_7469a286259799e5b37e5db9296f00b3'] = 'JA';
-$_MODULE['<{psgdpr}prestashop>dataconsent_c2f3f489a00553e7a01d369c103c7251'] = 'NEIN';
-$_MODULE['<{psgdpr}prestashop>dataconsent_f782036f044fe2a6de1677dcac0868c2'] = 'Einwilligungsanfrage';
 $_MODULE['<{psgdpr}prestashop>dataconsent_361f761e0f718800272dc62901fd06dd'] = 'Diese Nachricht wird unter der Registerkarte „Meine persönlichen Informationen“ des Kundenkontos angezeigt';
 $_MODULE['<{psgdpr}prestashop>dataconsent_c661cf76442d8d2cb318d560285a2a57'] = '';
-$_MODULE['<{psgdpr}prestashop>dataconsent_7469a286259799e5b37e5db9296f00b3'] = 'JA';
-$_MODULE['<{psgdpr}prestashop>dataconsent_c2f3f489a00553e7a01d369c103c7251'] = 'NEIN';
-$_MODULE['<{psgdpr}prestashop>dataconsent_f782036f044fe2a6de1677dcac0868c2'] = 'Einwilligungsanfrage';
-$_MODULE['<{psgdpr}prestashop>dataconsent_c7ad735a42df6942cbad2402dd3fad2a'] = 'Diese Nachricht wird im Formular zur Kundenerstellung angezeigt';
-$_MODULE['<{psgdpr}prestashop>dataconsent_7469a286259799e5b37e5db9296f00b3'] = 'JA';
-$_MODULE['<{psgdpr}prestashop>dataconsent_c2f3f489a00553e7a01d369c103c7251'] = 'NEIN';
-$_MODULE['<{psgdpr}prestashop>dataconsent_f782036f044fe2a6de1677dcac0868c2'] = 'Einwilligungsanfrage';
 $_MODULE['<{psgdpr}prestashop>dataconsent_5562e13c7ff921bf7907e1d5e0ffc294'] = 'Diese Nachricht wird mit einem Kontrollkästchen hinzugefügt.';
 $_MODULE['<{psgdpr}prestashop>dataconsent_a8b79d64d6a4c3e13b3c805542292d78'] = 'Andere installierte Module, die eine Einwilligungsbestätigung benötigen, werden nur in diesem Reiter angezeigt, wenn das DSGVO-Update ausgeführt wurde. Die entsprechenden Felder werden automatisch angezeigt, damit Sie die Kontrollkästchen für die Einwilligungsbestätigung individualisieren können.';
 $_MODULE['<{psgdpr}prestashop>dataconsent_c9cc8cce247e49bae79f15173ce97354'] = 'Speichern';
@@ -137,7 +108,6 @@ $_MODULE['<{psgdpr}prestashop>customeractivity_9579cdef0bf63ffa6b1e3e3c616d9cac'
 $_MODULE['<{psgdpr}prestashop>customeractivity_b9263f280c2c2ef949e10b7aa7a61549'] = 'Art der Anfrage';
 $_MODULE['<{psgdpr}prestashop>customeractivity_f0dc5a7e50af112eee854e8cee968e06'] = 'Antragsdatum';
 $_MODULE['<{psgdpr}prestashop>customeractivity_b62799f8fdbb9329b450c490004a6213'] = 'Einwilligungsbestätigung';
-$_MODULE['<{psgdpr}prestashop>customeractivity_e0e4fc6213e8b3593495a7260c3a4c2e'] = 'Barrierefreiheit';
 $_MODULE['<{psgdpr}prestashop>customeractivity_e0e4fc6213e8b3593495a7260c3a4c2e'] = 'Barrierefreiheit';
 $_MODULE['<{psgdpr}prestashop>customeractivity_530479efffb195651bdbfbd50cfb8a4c'] = 'Löschen';
 $_MODULE['<{psgdpr}prestashop>getstarted_be11c74c1dd7f307bb80183a90dc2067'] = 'Loslegen';
@@ -204,59 +174,36 @@ $_MODULE['<{psgdpr}prestashop>dataconfig_6c5a79a30b5c5c4fb6ec45735d32edc2'] = 'A
 $_MODULE['<{psgdpr}prestashop>dataconfig_1c76cbfe21c6f44c1d1e59d54f3e4420'] = 'Unternehmen';
 $_MODULE['<{psgdpr}prestashop>dataconfig_15bbb9d0bbf25e8d2978de1168c749dc'] = 'Website';
 $_MODULE['<{psgdpr}prestashop>dataconfig_284b47b0bb63ae2df3b29f0e691d6fcf'] = 'Adressen';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_effdb9ce6c5d44df31b89d7069c8e0fb'] = 'Pseudonym';
-$_MODULE['<{psgdpr}prestashop>dataconfig_1c76cbfe21c6f44c1d1e59d54f3e4420'] = 'Unternehmen';
-$_MODULE['<{psgdpr}prestashop>dataconfig_49ee3087348e8d44e1feda1917443987'] = 'Name';
 $_MODULE['<{psgdpr}prestashop>dataconfig_dd7bf230fde8d4836917806aff6a6b27'] = 'Adresse';
 $_MODULE['<{psgdpr}prestashop>dataconfig_fac322c3b42d04806299ae195f8a9238'] = 'Telefon(e)';
 $_MODULE['<{psgdpr}prestashop>dataconfig_59716c97497eb9694541f7c3d37b1a4d'] = 'Land';
 $_MODULE['<{psgdpr}prestashop>dataconfig_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>dataconfig_587bb937485e3dbe02ea0d281600bb52'] = 'Keine Adressen';
 $_MODULE['<{psgdpr}prestashop>dataconfig_7442e29d7d53e549b78d93c46b8cdcfc'] = 'Bestellungen';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_63d5049791d9d79d86e9a108b0a999ca'] = 'Referenz';
 $_MODULE['<{psgdpr}prestashop>dataconfig_c453a4b8e8d98e82f35b67f433e3b4da'] = 'Zahlung';
 $_MODULE['<{psgdpr}prestashop>dataconfig_d02bbc3cb147c272b0445ac5ca7d1a36'] = 'Bestellstatus';
 $_MODULE['<{psgdpr}prestashop>dataconfig_ea067eb37801c5aab1a1c685eb97d601'] = 'Insgesamt gezahlt';
-$_MODULE['<{psgdpr}prestashop>dataconfig_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>dataconfig_08cfa7751d1812e961560f623e082aba'] = 'Keine Bestellungen';
 $_MODULE['<{psgdpr}prestashop>dataconfig_fc26e55e0993a75e892175deb02aae15'] = 'Einkaufswagen';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_490aa6e856ccf208a054389e47ce0d06'] = 'ID';
 $_MODULE['<{psgdpr}prestashop>dataconfig_1070734fc83ac44f690c17af28986fb7'] = 'Produkte insgesamt';
-$_MODULE['<{psgdpr}prestashop>dataconfig_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>dataconfig_bbd47e26c95290218b2fc449e54e8cdc'] = 'Keine Einkaufswagen';
 $_MODULE['<{psgdpr}prestashop>dataconfig_41de6d6cfb8953c021bbe4ba0701c8a1'] = 'Nachrichten';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_a12a3079e14ced46e69ba52b8a90b21a'] = 'IP';
 $_MODULE['<{psgdpr}prestashop>dataconfig_4c2a8fe7eaf24721cc7a9f0175115bd4'] = 'Nachricht';
-$_MODULE['<{psgdpr}prestashop>dataconfig_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>dataconfig_58a747ef5d07d22101bdcd058e772ff9'] = 'Keine Nachrichten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_93bd48ecb9c4d5c4eec7fefffbb2070f'] = 'Letzte Verbindungen';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_33e29c1d042c0923008f78b46af94984'] = 'Ursprüngliche Anfrage';
 $_MODULE['<{psgdpr}prestashop>dataconfig_57f32d7d0e6672cc2b60bc7a49f91453'] = 'Aufgerufene Seite';
 $_MODULE['<{psgdpr}prestashop>dataconfig_fae6aba9bc4e69842be0ac98e15c4c99'] = 'Zeit auf der Seite';
 $_MODULE['<{psgdpr}prestashop>dataconfig_75ba8d70e3692ba200f0e0df37b4d2ae'] = 'IP-Adresse';
-$_MODULE['<{psgdpr}prestashop>dataconfig_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>dataconfig_c51e6bdf66e5d601e85d055301014410'] = 'Keine Verbindungen';
 $_MODULE['<{psgdpr}prestashop>dataconfig_e55f75a29310d7b60f7ac1d390c8ae42'] = 'Modul';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
-$_MODULE['<{psgdpr}prestashop>dataconfig_42a7b2626eae970122e01f65af2f5092'] = 'Keine Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_42a7b2626eae970122e01f65af2f5092'] = 'Keine Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_61a649a33f2869e5e35fbb7aff3a80d9'] = 'E-Mail';
-$_MODULE['<{psgdpr}prestashop>dataconfig_596403b61367ca30d6de75812275f9cd'] = 'Daten löschen';
-$_MODULE['<{psgdpr}prestashop>dataconfig_e55f75a29310d7b60f7ac1d390c8ae42'] = 'Modul';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
-$_MODULE['<{psgdpr}prestashop>dataconfig_42a7b2626eae970122e01f65af2f5092'] = 'Keine Daten';
-$_MODULE['<{psgdpr}prestashop>dataconfig_42a7b2626eae970122e01f65af2f5092'] = 'Keine Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_f9dd946cc89c1f3b41a0edbe0f36931d'] = 'TELEFON';
-$_MODULE['<{psgdpr}prestashop>dataconfig_596403b61367ca30d6de75812275f9cd'] = 'Daten löschen';
-$_MODULE['<{psgdpr}prestashop>dataconfig_e55f75a29310d7b60f7ac1d390c8ae42'] = 'Modul';
-$_MODULE['<{psgdpr}prestashop>dataconfig_6370c5a9859b827de2be9d30ec4b997e'] = 'Personenbezogene Daten';
-$_MODULE['<{psgdpr}prestashop>dataconfig_42a7b2626eae970122e01f65af2f5092'] = 'Keine Daten';
-$_MODULE['<{psgdpr}prestashop>dataconfig_42a7b2626eae970122e01f65af2f5092'] = 'Keine Daten';
 $_MODULE['<{psgdpr}prestashop>dataconfig_f3f5e3b297c7980c5af3c17a4c0ebcf2'] = 'Kein Ergebnis in der Kundendatenbank für';
 $_MODULE['<{psgdpr}prestashop>dataconfig_e9a837cf85ac119ec97ac242df3ce0d3'] = 'Suchen Sie nach jemandem, der kein Kundenkonto besitzt? Suchen Sie nach seiner E-Mail-Adresse oder Telefonnummer.';
 $_MODULE['<{psgdpr}prestashop>dataconfig_f049593e15945e4e954d5a8803ec1e9f'] = 'Sie können jedoch den Löschvorgang für diese Adresse fortsetzen (nur für Module, für die das DSGVO-Update ausgeführt wurde).';
@@ -289,8 +236,6 @@ $_MODULE['<{psgdpr}prestashop>exportdatatocsv_1c76cbfe21c6f44c1d1e59d54f3e4420']
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_15bbb9d0bbf25e8d2978de1168c749dc'] = 'Website';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_284b47b0bb63ae2df3b29f0e691d6fcf'] = 'Adressen';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_effdb9ce6c5d44df31b89d7069c8e0fb'] = 'Pseudonym';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_1c76cbfe21c6f44c1d1e59d54f3e4420'] = 'Unternehmen';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_49ee3087348e8d44e1feda1917443987'] = 'Name';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_dd7bf230fde8d4836917806aff6a6b27'] = 'Adresse';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_59716c97497eb9694541f7c3d37b1a4d'] = 'Land';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_44749712dbec183e983dcd78a7736c41'] = 'Datum';
@@ -300,35 +245,48 @@ $_MODULE['<{psgdpr}prestashop>exportdatatocsv_63d5049791d9d79d86e9a108b0a999ca']
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_c453a4b8e8d98e82f35b67f433e3b4da'] = 'Zahlung';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_d02bbc3cb147c272b0445ac5ca7d1a36'] = 'Bestellstatus';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_ea067eb37801c5aab1a1c685eb97d601'] = 'Insgesamt gezahlt';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_08cfa7751d1812e961560f623e082aba'] = 'Keine Bestellungen';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_c8be451a5698956a0e78b5c2caab4821'] = 'Gekaufte Produkte';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_79af0c77f8ce8cbb17006e22e8e9494b'] = 'Bestellnummer';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_2cc349f141e8c9932281bf573f2c40ef'] = 'Produktreferenz';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_49ee3087348e8d44e1feda1917443987'] = 'Name';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_694e8d1f2ee056f98ee488bdc4982d73'] = 'Menge';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_fc26e55e0993a75e892175deb02aae15'] = 'Einkaufswagen';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_490aa6e856ccf208a054389e47ce0d06'] = 'ID';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_db205f01b4fd580fb5daa9072d96849d'] = 'Produkte insgesamt';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_bbd47e26c95290218b2fc449e54e8cdc'] = 'Keine Einkaufswagen';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_fc6dfe4f8b07fc04c99e27425f780754'] = 'ID';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_75ed578ac3cb02b0ba40002a25bc0403'] = 'Produktreferenz';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_49ee3087348e8d44e1feda1917443987'] = 'Name';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_694e8d1f2ee056f98ee488bdc4982d73'] = 'Menge';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_09dc02ecbb078868a3a86dded030076d'] = 'Keine Produkte';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_bbd47e26c95290218b2fc449e54e8cdc'] = 'Keine Einkaufswagen';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_41de6d6cfb8953c021bbe4ba0701c8a1'] = 'Nachrichten';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_a12a3079e14ced46e69ba52b8a90b21a'] = 'IP';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_4c2a8fe7eaf24721cc7a9f0175115bd4'] = 'Nachricht';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_58a747ef5d07d22101bdcd058e772ff9'] = 'Keine Nachrichten';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_93bd48ecb9c4d5c4eec7fefffbb2070f'] = 'Letzte Verbindungen';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_33e29c1d042c0923008f78b46af94984'] = 'Ursprüngliche Anfrage';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_57f32d7d0e6672cc2b60bc7a49f91453'] = 'Aufgerufene Seite';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_fae6aba9bc4e69842be0ac98e15c4c99'] = 'Zeit auf der Seite';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_75ba8d70e3692ba200f0e0df37b4d2ae'] = 'IP-Adresse';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_44749712dbec183e983dcd78a7736c41'] = 'Datum';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_59716c97497eb9694541f7c3d37b1a4d'] = 'Land';
-$_MODULE['<{psgdpr}prestashop>exportdatatocsv_44749712dbec183e983dcd78a7736c41'] = 'Datum';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_c51e6bdf66e5d601e85d055301014410'] = 'Keine Verbindungen';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_c654dacdea4ad6f75ad36553a8a947cd'] = 'Meine persönlichen Daten';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_a8308387f3ffc2d045d2b6125e74317d'] = 'Zugang zu meinen Daten';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_915f4446a47b51378e37374cfbb72d7f'] = 'Sie haben jederzeit das Recht, die unserer Seite zur Verfügung gestellten Daten abzurufen. Klicken Sie auf „Meine Daten abrufen“, um eine Kopie Ihrer persönlichen Daten automatisch als PDF- oder CSV-Datei herunter.';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_49b5d04f5f20820830f080d4674c8669'] = 'MEINE CSV-DATEN ABRUFEN';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_7b0b06bfe69473081553bcccb12ca068'] = 'MEINE PDF-DATEN ABRUFEN';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_91a49c1d45a5d37e85658d01b6f37423'] = 'Berichtigungs- & Löschanfragen';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_01cb324ae91e9bd16213cc2945334249'] = 'Sie haben das Recht, alle persönlichen Informationen auf der Seite „Mein Konto“ zu ändern. Bitte kontaktieren Sie uns für jede andere Anfrage bezüglich der Berichtigung und/oder Löschung Ihrer persönlichen Daten über unsere';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_af5efea250326c1c34d69aa9364b482c'] = 'Kontaktseite.';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata17_332087a4991d8bc866abd3fd78a2e514'] = 'Wir werden Ihre Anfrage überprüfen und so schnell wie möglich auf Sie zurückkommen.';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_d95cf4ab2cbf1dfb63f066b50558b07d'] = 'Mein Konto';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_c654dacdea4ad6f75ad36553a8a947cd'] = 'Meine persönlichen Daten';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_a8308387f3ffc2d045d2b6125e74317d'] = 'Zugang zu meinen Daten';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_915f4446a47b51378e37374cfbb72d7f'] = 'Sie haben jederzeit das Recht, die unserer Seite zur Verfügung gestellten Daten abzurufen. Klicken Sie auf „Meine Daten abrufen“, um eine Kopie Ihrer persönlichen Daten automatisch als PDF- oder CSV-Datei herunter.';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_49b5d04f5f20820830f080d4674c8669'] = 'MEINE CSV-DATEN ABRUFEN';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_7b0b06bfe69473081553bcccb12ca068'] = 'MEINE PDF-DATEN ABRUFEN';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_91a49c1d45a5d37e85658d01b6f37423'] = 'Berichtigungs- & Löschanfragen';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_01cb324ae91e9bd16213cc2945334249'] = 'Sie haben das Recht, alle persönlichen Informationen auf der Seite „Mein Konto“ zu ändern. Bitte kontaktieren Sie uns für jede andere Anfrage bezüglich der Berichtigung und/oder Löschung Ihrer persönlichen Daten über unsere';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_af5efea250326c1c34d69aa9364b482c'] = 'Kontaktseite.';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_332087a4991d8bc866abd3fd78a2e514'] = 'Wir werden Ihre Anfrage überprüfen und so schnell wie möglich auf Sie zurückkommen.';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_0b3db27bc15f682e92ff250ebb167d4b'] = 'Zurück zu Ihrem Konto';
+$_MODULE['<{psgdpr}prestashop>customerpersonaldata16_8cf04a9734132302f96da8e113e80ce5'] = 'Startseite';
+
+?>
