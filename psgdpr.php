@@ -122,8 +122,8 @@ class Psgdpr extends Module
         // Settings
         $this->name = 'psgdpr';
         $this->tab = 'administration';
-        $this->version = '1.4.3.0';
-        $this->author = 'PrestaShop';
+        $this->version = '1.4.3.1';
+        $this->author = 'Gurkcity';
         $this->need_instance = 0;
 
         $this->module_key = '1001fe84b4dede19725b8826e32165b7';
