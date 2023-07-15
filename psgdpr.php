@@ -89,6 +89,7 @@ class Psgdpr extends Module
         $this->tab = 'administration';
         $this->version = '2.0.1.0';
         $this->author = 'Gurkcity';
+
         $this->need_instance = 0;
 
         $this->module_key = '1001fe84b4dede19725b8826e32165b7';
