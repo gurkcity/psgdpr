@@ -57,7 +57,7 @@ $_MODULE['<{psgdpr}prestashop>exportdatatocsv_57f32d7d0e6672cc2b60bc7a49f91453']
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_fae6aba9bc4e69842be0ac98e15c4c99'] = 'Zeit auf der Seite';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_75ba8d70e3692ba200f0e0df37b4d2ae'] = 'IP-Adresse';
 $_MODULE['<{psgdpr}prestashop>exportdatatocsv_c51e6bdf66e5d601e85d055301014410'] = 'Keine Verbindungen';
-$_MODULE['<{psgdpr}prestashop>customeraccount_5868129c4526891dddb05b8e59c33572'] = 'Meine persönlichen Daten';
+$_MODULE['<{psgdpr}prestashop>customeraccount_5868129c4526891dddb05b8e59c33572'] = 'DSGVO - Persönliche Daten';
 $_MODULE['<{psgdpr}prestashop>customerpersonaldata_5868129c4526891dddb05b8e59c33572'] = 'DSGVO – Persönliche Daten';
 $_MODULE['<{psgdpr}prestashop>customerpersonaldata_a8308387f3ffc2d045d2b6125e74317d'] = 'Zugang zu meinen Daten';
 $_MODULE['<{psgdpr}prestashop>customerpersonaldata_915f4446a47b51378e37374cfbb72d7f'] = 'Sie haben jederzeit das Recht, die unserer Seite zur Verfügung gestellten Daten abzurufen. Klicken Sie auf „Meine Daten abrufen“, um eine Kopie Ihrer persönlichen Daten automatisch als PDF- oder CSV-Datei herunter.';
