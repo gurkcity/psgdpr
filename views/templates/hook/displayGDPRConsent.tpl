@@ -48,13 +48,13 @@
 
             // by default forms submit will be disabled, only will enable if agreement checkbox is checked
             if (element.prop('checked') != true) {
-                element.closest('form').find('[type="submit"]').attr('disabled', 'disabled');
+                element.closest('form, .psgdpr-form-wraper').first().find('[type="submit"]').attr('disabled', 'disabled');
             }
             $(document).on("change" ,'.psgdpr_consent_checkboxes_' + psgdpr_id_module, function() {
                 if ($(this).prop('checked') == true) {
-                    $(this).closest('form').find('[type="submit"]').removeAttr('disabled');
+                    $(this).closest('form, .psgdpr-form-wraper').first().find('[type="submit"]').removeAttr('disabled');
                 } else {
-                    $(this).closest('form').find('[type="submit"]').attr('disabled', 'disabled');
+                    $(this).closest('form, .psgdpr-form-wraper').first().find('[type="submit"]').attr('disabled', 'disabled');
                 }
 
             });
