@@ -122,7 +122,7 @@ class Psgdpr extends Module
         // Settings
         $this->name = 'psgdpr';
         $this->tab = 'administration';
-        $this->version = '1.4.3.2';
+        $this->version = '1.4.3.3';
         $this->author = 'Gurkcity';
         $this->need_instance = 0;
 
