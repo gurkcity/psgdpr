@@ -688,17 +688,24 @@ class Psgdpr extends Module
 
         $url = Context::getContext()->link->getModuleLink($this->name, 'FrontAjaxGdpr', [], true);
 
-        $id_customer = Context::getContext()->customer->id;
+        $id_customer = 0;
         $id_guest = 0;
-        if ($id_customer == null) {
-            $id_guest = Context::getContext()->cart->id_guest;
-            $id_customer = 0;
+        $secure_key = '';
+
+        if (!empty($this->context->customer->id)) {
+            $id_customer = $this->context->customer->id;
+            $secure_key = $this->context->customer->secure_key;
         }
+
+        if (!empty($this->context->cart->id_guest)) {
+            $id_guest = $this->context->cart->id_guest;
+        }
+
         $this->context->smarty->assign([
             'ps_version' => $this->ps_version,
             'psgdpr_id_guest' => $id_guest,
             'psgdpr_id_customer' => $id_customer,
-            'psgdpr_customer_token' => sha1(Context::getContext()->customer->secure_key),
+            'psgdpr_customer_token' => sha1($secure_key),
             'psgdpr_guest_token' => sha1('psgdpr' . $id_guest . $_SERVER['REMOTE_ADDR'] . date('Y-m-d')),
             'psgdpr_id_module' => $id_module,
             'psgdpr_consent_message' => $message,
