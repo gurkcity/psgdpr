@@ -44,20 +44,20 @@ class Psgdpr extends Module
     ];
 
     private $presetMessageAccountCreation = [
-        'en' => 'I agree to the terms and conditions and the privacy policy',
-        'cb' => 'I agree to the terms and conditions and the privacy policy',
-        'es' => 'Acepto las condiciones generales y la política de confidencialidad',
-        'ag' => 'Acepto las condiciones generales y la política de confidencialidad',
-        'br' => 'Acepto las condiciones generales y la política de confidencialidad',
-        'mx' => 'Acepto las condiciones generales y la política de confidencialidad',
-        'de' => 'Ich akzeptiere die Allgemeinen Geschäftsbedingungen und die Datenschutzrichtlinie',
-        'qc' => 'Acepto las condiciones generales y la política de confidencialidad',
-        'fr' => 'J\'accepte les conditions générales et la politique de confidentialité',
-        'it' => 'Accetto le condizioni generali e la politica di riservatezza',
-        'nl' => 'Ik accepteer de Algemene voorwaarden en het vertrouwelijkheidsbeleid',
-        'pl' => 'Akceptuję ogólne warunki użytkowania i politykę prywatności',
-        'pt' => 'Aceito as condições gerais e a política de confidencialidade',
-        'ru' => 'Я соглашаюсь на использование указанных в этой форме данных компанией xxxxx для (i) изучения моего запроса, (ii) ответа и, при необходимости, (iii) управления возможными договорными отношениями.',
+        'en' => 'I agree to the <a href="#">terms and conditions</a> and the <a href="#">privacy policy</a>',
+        'cb' => 'I agree to the <a href="#">terms and conditions</a> and the <a href="#">privacy policy</a>',
+        'es' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
+        'ag' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
+        'br' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
+        'mx' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
+        'de' => 'Ich akzeptiere die <a href="/de/content/allgemeine-geschaeftsbedingungen">Allgemeinen Geschäftsbedingungen</a> und die <a href="/de/content/datenschutz">Datenschutzrichtlinie</a>',
+        'qc' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
+        'fr' => 'J\'accepte les <a href="#">conditions générales et la <a href="#">politique de confidentialité</a>',
+        'it' => 'Accetto le <a href="#">condizioni generali</a> e la <a href="#">politica di riservatezza</a>',
+        'nl' => 'Ik accepteer de <a href="#">Algemene voorwaarden</a> en het <a href="#">vertrouwelijkheidsbeleid</a>',
+        'pl' => 'Akceptuję <a href="#">ogólne warunki użytkowania</a> i <a href="#">politykę prywatności</a>',
+        'pt' => 'Aceito as <a href="#">condições gerais</a> e a <a href="#">política de confidencialidade</a>',
+        'ru' => 'Я соглашаюсь на <a href="#">использование указанных в этой форме данных компанией</a> xxxxx для (i) изучения моего запроса, (ii) ответа и, при необходимости, (iii) управления возможными договорными отношениями.',
     ];
 
     private $presetMessageAccountCustomer = [
@@ -748,7 +748,7 @@ class Psgdpr extends Module
         // create GDPRConsent object in order to register it
         $moduleConsent = new GDPRConsent();
         $moduleConsent->id_module = $module['id_module'];
-        $moduleConsent->message = 'Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt.';
+        $moduleConsent->message = 'Enim quis fugiat consequat elit minim nisi eu occaecat occaecat deserunt aliquip nisi ex deserunt. (translate in module psgdpr)';
         $moduleConsent->active = true;
 
         $moduleConsent->date_add = date('Y-m-d H:i:s');
