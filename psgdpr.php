@@ -44,20 +44,20 @@ class Psgdpr extends Module
     ];
 
     private $presetMessageAccountCreation = [
-        'en' => 'I agree to the <a href="#">terms and conditions</a> and the <a href="#">privacy policy</a>',
-        'cb' => 'I agree to the <a href="#">terms and conditions</a> and the <a href="#">privacy policy</a>',
-        'es' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
-        'ag' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
-        'br' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
-        'mx' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
-        'de' => 'Ich akzeptiere die <a href="/de/content/allgemeine-geschaeftsbedingungen">Allgemeinen Geschäftsbedingungen</a> und die <a href="/de/content/datenschutz">Datenschutzrichtlinie</a>',
-        'qc' => 'Acepto las <a href="#">condiciones generales</a> y la <a href="#">política de confidencialidad</a>',
-        'fr' => 'J\'accepte les <a href="#">conditions générales et la <a href="#">politique de confidentialité</a>',
-        'it' => 'Accetto le <a href="#">condizioni generali</a> e la <a href="#">politica di riservatezza</a>',
-        'nl' => 'Ik accepteer de <a href="#">Algemene voorwaarden</a> en het <a href="#">vertrouwelijkheidsbeleid</a>',
-        'pl' => 'Akceptuję <a href="#">ogólne warunki użytkowania</a> i <a href="#">politykę prywatności</a>',
-        'pt' => 'Aceito as <a href="#">condições gerais</a> e a <a href="#">política de confidencialidade</a>',
-        'ru' => 'Я соглашаюсь на <a href="#">использование указанных в этой форме данных компанией</a> xxxxx для (i) изучения моего запроса, (ii) ответа и, при необходимости, (iii) управления возможными договорными отношениями.',
+        'en' => 'I agree to the <a href="#">privacy policy</a>',
+        'cb' => 'I agree to the <a href="#">privacy policy</a>',
+        'es' => 'Acepto la <a href="#">política de confidencialidad</a>',
+        'ag' => 'Acepto la <a href="#">política de confidencialidad</a>',
+        'br' => 'Acepto la <a href="#">política de confidencialidad</a>',
+        'mx' => 'Acepto la <a href="#">política de confidencialidad</a>',
+        'de' => 'Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen.',
+        'qc' => 'Acepto la <a href="#">política de confidencialidad</a>',
+        'fr' => 'J\'accepte la <a href="#">politique de confidentialité</a>',
+        'it' => 'Accetto la <a href="#">politica di riservatezza</a>',
+        'nl' => 'Ik accepteer het <a href="#">vertrouwelijkheidsbeleid</a>',
+        'pl' => 'Akceptuję <a href="#">politykę prywatności</a>',
+        'pt' => 'Aceito a <a href="#">política de confidencialidade</a>',
+        'ru' => 'Я соглашаюсь на <a href="#">использование указанных</a> в этой форме данных компанией xxxxx для (i) изучения моего запроса, (ii) ответа и, при необходимости, (iii) управления возможными договорными отношениями.',
     ];
 
     private $presetMessageAccountCustomer = [
