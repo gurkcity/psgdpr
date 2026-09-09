@@ -6,7 +6,7 @@
 
 ## About
 
-Official GDPR compliance module
+Make your store comply with the General Data Protection Regulation (GDPR).
 
 ## Compatibility
 

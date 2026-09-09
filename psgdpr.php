@@ -69,7 +69,7 @@ class Psgdpr extends Module
         'br' => 'Acepto las condiciones generales y la política de confidencialidad',
         'mx' => 'Acepto las condiciones generales y la política de confidencialidad',
         'de' => 'Ich akzeptiere die Allgemeinen Geschäftsbedingungen und die Datenschutzrichtlinie',
-        'qc' => 'J\'accepte les conditions générales et la politique de confidentialité',
+        'qc' => 'Acepto las condiciones generales y la política de confidencialidad',
         'fr' => 'J\'accepte les conditions générales et la politique de confidentialité',
         'it' => 'Accetto le condizioni generali e la politica di riservatezza',
         'nl' => 'Ik accepteer de Algemene voorwaarden en het vertrouwelijkheidsbeleid',
@@ -87,7 +87,7 @@ class Psgdpr extends Module
     {
         $this->name = 'psgdpr';
         $this->tab = 'administration';
-        $this->version = '2.0.1.1';
+        $this->version = '2.0.3.0';
         $this->author = 'Gurkcity';
 
         $this->need_instance = 0;
@@ -312,9 +312,10 @@ class Psgdpr extends Module
             'id_shop' => $id_shop,
             'module_version' => $this->version,
             'moduleAdminLink' => $moduleAdminLink,
+            'link' => $this->context->link,
             'id_lang' => $id_lang,
             'api_controller' => $this->getAdminLinkWithoutToken($apiController),
-            'admin_token' => $this->getTokenFromAdminLink($apiController),
+            'admin_token' => Tools::getAdminTokenLite('AdminModules'),
             'faq' => $this->loadFaq(),
             'doc' => $this->getReadmeByLang($isoLang),
             'youtubeLink' => $this->getYoutubeLinkByLang($isoLang),
@@ -356,24 +357,6 @@ class Psgdpr extends Module
         }
 
         return substr($link, 0, $pos);
-    }
-
-    /**
-     * Get token from an admin controller link
-     *
-     * @param string $link
-     *
-     * @return string
-     */
-    public function getTokenFromAdminLink(string $link): string
-    {
-        parse_str((string) parse_url($link, PHP_URL_QUERY), $result);
-
-        if (is_array($result['_token'])) {
-            throw new \PrestaShopException('Invalid token');
-        }
-
-        return $result['_token'];
     }
 
     /**
@@ -738,12 +721,14 @@ class Psgdpr extends Module
         /** @var ConsentRepository $consentRepository */
         $consentRepository = $this->get('PrestaShop\Module\Psgdpr\Repository\ConsentRepository');
 
+        // If no information about a module requesting a consent checkbox was passed, nothing to do
         if (!isset($params['id_module'])) {
             return '';
         }
 
         $moduleId = (int) $params['id_module'];
 
+        // If this module does not have a consent activated, nothing to do
         if (false === $consentRepository->findModuleConsentIsActive($moduleId)) {
             return '';
         }
@@ -751,18 +736,26 @@ class Psgdpr extends Module
         $message = $consentRepository->findModuleConsentMessage($moduleId, $this->context->language->id);
         $url = $this->context->link->getModuleLink($this->name, 'FrontAjaxGdpr', [], true);
 
-        $customerId = $this->context->customer->id;
+        /*
+         * Prepare customer data. The tokens will be used to reverse validate the data in the AJAX request.
+         * customer_token is used when the customer is logged in, guest_token when not. Even if both customer
+         * and guest IDs are empty, we can still mark the consent by using the IP address.
+         */
         $guestId = 0;
-
-        if ($customerId == null) {
+        $customerId = 0;
+        $secureKey = '';
+        if (!empty($this->context->customer->id)) {
+            $customerId = $this->context->customer->id;
+            $secureKey = $this->context->customer->secure_key;
+        }
+        if (!empty($this->context->cart->id_guest)) {
             $guestId = $this->context->cart->id_guest;
-            $customerId = 0;
         }
 
         $this->context->smarty->assign([
             'psgdpr_id_guest' => $guestId,
             'psgdpr_id_customer' => $customerId,
-            'psgdpr_customer_token' => sha1($this->context->customer->secure_key),
+            'psgdpr_customer_token' => sha1($secureKey),
             'psgdpr_guest_token' => sha1('psgdpr' . $guestId . $_SERVER['REMOTE_ADDR'] . date('Y-m-d')),
             'psgdpr_id_module' => $moduleId,
             'psgdpr_consent_message' => $message,
