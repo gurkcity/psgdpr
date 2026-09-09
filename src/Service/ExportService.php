@@ -26,6 +26,7 @@ use Context;
 use Currency;
 use Customer;
 use DateTime;
+use Db;
 use Error;
 use Exception;
 use Gender;
@@ -35,7 +36,6 @@ use Language;
 use Module;
 use Order;
 use PrestaShop\Module\Psgdpr\Service\Export\ExportInterface;
-use PrestaShop\PrestaShop\Adapter\Entity\CustomerThread;
 use PrestaShop\PrestaShop\Core\Domain\Customer\ValueObject\CustomerId;
 use PrestaShopBundle\Translation\TranslatorInterface;
 use PrestaShopException;
@@ -411,7 +411,7 @@ class ExportService
      */
     private function getMessagesInformations(Customer $customer): array
     {
-        $customerMessages = CustomerThread::getCustomerMessages($customer->id);
+        $customerMessages = $this->getCustomerMessages($customer->id);
 
         return [
             'name' => 'messages',
@@ -563,5 +563,18 @@ class ExportService
                 ];
             }, $groupsidList),
         ];
+    }
+
+    private function getCustomerMessages($id_customer)
+    {
+        $sql = 'SELECT *
+			FROM ' . _DB_PREFIX_ . 'customer_thread ct
+			LEFT JOIN ' . _DB_PREFIX_ . 'customer_message cm ON (
+                ct.id_customer_thread = cm.id_customer_thread
+                AND cm.private = 0
+            )
+			WHERE id_customer = ' . (int) $id_customer;
+
+        return Db::getInstance()->executeS($sql);
     }
 }
